@@ -138,25 +138,95 @@ body {
   right: 200px;
   top: 15px;
 }
-
-/* @media (max-width: 1200px) {
-  .box {
-    flex-basis: 100%;
-    display: flex;
-  }
-} 
-@media (max-width: 920px) {
-  .box {
-    flex-basis: 50%;
-
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-  }
+/* .......................... */
+.main {
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  background-color: #ff0000;
 }
-@media (max-width: 768px) {
-  .box {
-    flex-basis: 25%;
-    flex-direction: column;
-  }
-} */
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  padding: 20px;
+  gap: 24px;
+}
+.main-menu::after {
+  content: ">";
+}
+.main-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Style for title */
+.title-1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.two {
+  width: 25%;
+}
+/* Style for sort by input */
+.sortby-price {
+  padding: 10px;
+  border: 1px solid #ccc;
+
+  display: inline-block;
+}
+
+/* Style for product container */
+
+.menu img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+p span {
+  font-weight: bold;
+}
+
+span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f00;
+}
+
+/* Style for buttons */
+.btn img {
+  margin-top: 30px;
+}
+.button {
+  margin-bottom: 20px;
+}
+.btn a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.btn a:last-child {
+  margin-right: 0;
+}
+
+.btn a:hover {
+  background-color: #f00;
+}
